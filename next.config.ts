@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "http",
+        hostname: "specials-images.forbesimg.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };

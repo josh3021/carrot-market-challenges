@@ -1,6 +1,8 @@
 import { BILLIONS_API_URL } from "@/constants/api";
 import Image from "next/image";
 import Link from "next/link";
+import { Industries } from "./utils/Industries";
+import { NetWorth } from "./utils/NetWorth";
 
 interface Billionaire {
   id: string;
@@ -41,27 +43,11 @@ export async function Billionaires() {
             )}
           </div>
           <div className="p-4">
-            <h2 className="font-bold text-xl text-white mb-2 line-clamp-2">
+            <h2 className="font-bold text-xl text-white line-clamp-2">
               {billionaire.name}
             </h2>
-            <p className="text-emerald-400 font-semibold text-lg mb-3">
-              ${Math.floor(billionaire.netWorth / 1000)} Billion
-            </p>
-            <div className="flex flex-wrap gap-1">
-              {billionaire.industries.slice(0, 3).map((industry) => (
-                <span
-                  key={industry}
-                  className="bg-emerald-500 text-zinc-900 text-xs font-semibold px-2 py-1 rounded-full"
-                >
-                  # {industry}
-                </span>
-              ))}
-              {billionaire.industries.length > 3 && (
-                <span className="text-zinc-400 text-xs px-2 py-1">
-                  +{billionaire.industries.length - 3} more
-                </span>
-              )}
-            </div>
+            <NetWorth netWorth={billionaire.netWorth} />
+            <Industries industries={billionaire.industries} />
           </div>
         </Link>
       ))}
