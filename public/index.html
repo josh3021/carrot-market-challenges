@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="grid grid-cols-3 w-full h-full gap-16 p-32">
+        <!-- Weather Component -->
+        <div class="container bg-white">
+            <h1 class="title">Weather</h1>
+            <div class="flex flex-col gap-4 h-3/4">
+                <!-- Weather List Items -->
+                <div class="bg-white w-full h-24 border-4 border-black shadow-[0_4px_0_0_#000000] rounded-2xl p-4 flex justify-between items-center transition-all hover:scale-105 active:scale-110">
+                    <div>
+                        <h2 class="text-2xl font-bold">Casius</h2>
+                        <span class="font-bold">Mars, 12AM</span>
+                    </div>
+                    <div class="flex items-center gap-2 justify-end">
+                        <!-- Sunny Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                        </svg>
+                        <span class="text-4xl font-bold">85°</span>
+                    </div>
+                </div>
+                
+                <div class="bg-amber-400 w-full h-24 border-4 border-black shadow-[0_4px_0_0_#000000] rounded-2xl p-4 flex justify-between items-center transition-all hover:scale-105 active:scale-110">
+                    <div>
+                        <h2 class="text-2xl font-bold">Dlacria</h2>
+                        <span class="font-bold">Mars, 12AM</span>
+                    </div>
+                    <div class="flex items-center gap-2 justify-end">
+                        <!-- Cloudy Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                        </svg>
+                        <span class="text-4xl font-bold">85°</span>
+                    </div>
+                </div>
+                
+                <div class="bg-cyan-400 w-full h-24 border-4 border-black shadow-[0_4px_0_0_#000000] rounded-2xl p-4 flex justify-between items-center transition-all hover:scale-105 active:scale-110">
+                    <div>
+                        <h2 class="text-2xl font-bold">New York</h2>
+                        <span class="font-bold">USA, 12AM</span>
+                    </div>
+                    <div class="flex items-center gap-2 justify-end">
+                        <!-- Sunny Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                        </svg>
+                        <span class="text-4xl font-bold">28°</span>
+                    </div>
+                </div>
+                
+                <div class="bg-rose-400 w-full h-24 border-4 border-black shadow-[0_4px_0_0_#000000] rounded-2xl p-4 flex justify-between items-center transition-all hover:scale-105 active:scale-110">
+                    <div>
+                        <h2 class="text-2xl font-bold">Zomato</h2>
+                        <span class="font-bold">Mars, 12AM</span>
+                    </div>
+                    <div class="flex items-center gap-2 justify-end">
+                        <!-- Cloudy Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                        </svg>
+                        <span class="text-4xl font-bold">20°</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="size-20 button">
+                    <!-- Plus Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- SimpleTag Component -->
+        <div class="container bg-white relative">
+            <button class="size-12 absolute button">
+                <!-- X Mark Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h1 class="text-zinc-600 font-bold text-center">SIMPLE TAG</h1>
+            <h1 class="title">Work with Best Designers</h1>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-amber-400 aspect-square rounded-xl border-3 flex justify-center items-center">
+                    <!-- Photo Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                </div>
+                <div class="bg-cyan-500 aspect-square rounded-xl border-3 flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                </div>
+                <div class="bg-pink-400 aspect-square rounded-xl border-3 flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                </div>
+                <div class="bg-rose-400 aspect-square rounded-xl border-3 flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="block bg-indigo-600 w-full py-3 rounded-xl text-white font-bold text-xl">
+                    Let's get it done
+                </button>
+            </div>
+        </div>
+
+        <!-- Friends Component -->
+        <div class="container bg-amber-400 relative">
+            <div class="grid grid-cols-[auto_1fr_auto] items-center">
+                <button class="size-10 col-span-1 button">
+                    <!-- Chevron Left Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+                <h1 class="title text-center">Friends</h1>
+                <div class="w-8"></div>
+            </div>
+            <div class="flex items-center justify-center gap-1 bg-white border-3 rounded-2xl px-4">
+                <input class="h-12 w-full outline-none" placeholder="Search with love..." />
+                <button class="size-6 cursor-pointer text-black hover:text-zinc-800">
+                    <!-- Magnifying Glass Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col gap-4 w-full">
+                <!-- Friend Items -->
+                <div class="w-full rounded-2xl bg-white border-3 flex items-center justify-between p-2">
+                    <div class="flex gap-2 items-center">
+                        <div class="rounded-full size-12 bg-rose-400 flex items-center justify-center">
+                            <!-- Face Smile Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col justify-center items-start">
+                            <span class="text-lg font-bold">Bill Rizer</span>
+                            <span class="text-xs font-light leading-none">Planet Designer</span>
+                        </div>
+                    </div>
+                    <button class="bg-amber-400 text-black px-3 my-1 rounded-2xl font-bold border-3 border-black shadow-[0_3px_0_0_#000000]">
+                        invite
+                    </button>
+                </div>
+                
+                <div class="w-full rounded-2xl bg-white border-3 flex items-center justify-between p-2">
+                    <div class="flex gap-2 items-center">
+                        <div class="rounded-full size-12 bg-rose-400 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col justify-center items-start">
+                            <span class="text-lg font-bold">Genbei Yagy</span>
+                            <span class="text-xs font-light leading-none">Planet Designer</span>
+                        </div>
+                    </div>
+                    <button class="bg-amber-400 text-black px-3 my-1 rounded-2xl font-bold border-3 border-black shadow-[0_3px_0_0_#000000]">
+                        invite
+                    </button>
+                </div>
+                
+                <div class="w-full rounded-2xl bg-white border-3 flex items-center justify-between p-2">
+                    <div class="flex gap-2 items-center">
+                        <div class="rounded-full size-12 bg-rose-400 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col justify-center items-start">
+                            <span class="text-lg font-bold">Lancy Neo</span>
+                            <span class="text-xs font-light leading-none">Rogue Corp.</span>
+                        </div>
+                    </div>
+                    <button class="bg-black text-white px-3 my-1 rounded-2xl font-bold border-3 border-black shadow-[0_3px_0_0_#000000]">
+                        invited
+                    </button>
+                </div>
+                
+                <div class="w-full rounded-2xl bg-white border-3 flex items-center justify-between p-2">
+                    <div class="flex gap-2 items-center">
+                        <div class="rounded-full size-12 bg-rose-400 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col justify-center items-start">
+                            <span class="text-lg font-bold">Bill Rizer #2</span>
+                            <span class="text-xs font-light leading-none">Hard Cops</span>
+                        </div>
+                    </div>
+                    <button class="bg-amber-400 text-black px-3 my-1 rounded-2xl font-bold border-3 border-black shadow-[0_3px_0_0_#000000]">
+                        invite
+                    </button>
+                </div>
+                
+                <div class="w-full rounded-2xl bg-white border-3 flex items-center justify-between p-2">
+                    <div class="flex gap-2 items-center">
+                        <div class="rounded-full size-12 bg-rose-400 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col justify-center items-start">
+                            <span class="text-lg font-bold">Konami</span>
+                            <span class="text-xs font-light leading-none">Xenon Creator</span>
+                        </div>
+                    </div>
+                    <button class="bg-amber-400 text-black px-3 my-1 rounded-2xl font-bold border-3 border-black shadow-[0_3px_0_0_#000000]">
+                        invite
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

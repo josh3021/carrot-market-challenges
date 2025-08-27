@@ -1,0 +1,56 @@
+/* Custom CSS styles extracted from globals.css */
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(251 207 232); /* bg-pink-100 */
+}
+
+.container {
+    padding: 4rem 2rem; /* px-8 py-16 */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* gap-4 */
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); /* shadow-2xl */
+    border-width: 4px; /* border-4 */
+    border-radius: 0.75rem; /* rounded-xl */
+    border-color: rgb(0 0 0); /* default black border */
+}
+
+.title {
+    font-size: 3rem; /* text-5xl */
+    line-height: 1;
+    font-weight: 700; /* font-bold */
+}
+
+.button {
+    background-color: rgb(255 255 255); /* bg-white */
+    border-width: 4px; /* border-4 */
+    border-color: rgb(0 0 0); /* border-black */
+    border-radius: 9999px; /* rounded-full */
+    position: relative;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    box-shadow: 0 4px 0 0 rgb(0 0 0); /* shadow-[0_4px_0_0_#000000] */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    transform: scale(1.05); /* hover:scale-105 */
+}
+
+.button:active {
+    transform: scale(1.1); /* active:scale-110 */
+}
+
+/* Additional utility for border-3 which isn't in standard Tailwind */
+.border-3 {
+    border-width: 3px;
+    border-color: rgb(0 0 0);
+}
